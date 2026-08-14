@@ -1,0 +1,20 @@
+{
+  "extensionName": {
+    "message": "Kawaikara에서 열기"
+  },
+  "extensionDescription": {
+    "message": "지원하는 스트리밍 사이트의 페이지, 영상, 링크를 Kawaikara에서 엽니다."
+  },
+  "openInKawaikara": {
+    "message": "Kawaikara에서 열기"
+  },
+  "openLinkInKawaikara": {
+    "message": "링크를 Kawaikara에서 열기"
+  },
+  "copyKawaikaraLink": {
+    "message": "Kawaikara 링크 복사"
+  },
+  "kawaikaraLinkCopied": {
+    "message": "Kawaikara 링크를 복사했습니다"
+  }
+}

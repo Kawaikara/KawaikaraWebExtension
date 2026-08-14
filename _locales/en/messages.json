@@ -1,0 +1,20 @@
+{
+  "extensionName": {
+    "message": "Open in Kawaikara"
+  },
+  "extensionDescription": {
+    "message": "Open pages, videos, and links from supported streaming sites in Kawaikara."
+  },
+  "openInKawaikara": {
+    "message": "Open in Kawaikara"
+  },
+  "openLinkInKawaikara": {
+    "message": "Open link in Kawaikara"
+  },
+  "copyKawaikaraLink": {
+    "message": "Copy Kawaikara link"
+  },
+  "kawaikaraLinkCopied": {
+    "message": "Kawaikara link copied"
+  }
+}

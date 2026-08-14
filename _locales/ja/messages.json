@@ -1,0 +1,20 @@
+{
+  "extensionName": {
+    "message": "Kawaikaraで開く"
+  },
+  "extensionDescription": {
+    "message": "対応するストリーミングサイトのページ、動画、リンクをKawaikaraで開きます。"
+  },
+  "openInKawaikara": {
+    "message": "Kawaikaraで開く"
+  },
+  "openLinkInKawaikara": {
+    "message": "リンクをKawaikaraで開く"
+  },
+  "copyKawaikaraLink": {
+    "message": "Kawaikaraリンクをコピー"
+  },
+  "kawaikaraLinkCopied": {
+    "message": "Kawaikaraリンクをコピーしました"
+  }
+}
