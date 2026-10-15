@@ -1,20 +1,254 @@
 {
   "extensionName": {
-    "message": "Kawaikara에서 열기"
+    "message": "Kawaikara WebExtension"
   },
   "extensionDescription": {
-    "message": "지원하는 스트리밍 사이트의 페이지, 영상, 링크를 Kawaikara에서 엽니다."
+    "message": "연결된 Kawaikara Provider가 제공하는 메뉴와 DOM 기능을 적용합니다."
   },
-  "openInKawaikara": {
-    "message": "Kawaikara에서 열기"
+  "extensionReady": {
+    "message": "Kawaikara 확장 로드 완료 · 사이트 기능 활성"
   },
-  "openLinkInKawaikara": {
-    "message": "링크를 Kawaikara에서 열기"
+  "extensionSetup": {
+    "message": "Kawaikara 연결됨 · Provider WebExtension을 켜세요"
   },
-  "copyKawaikaraLink": {
-    "message": "Kawaikara 링크 복사"
+  "extensionDisconnected": {
+    "message": "Kawaikara 확장 로드 완료 · 앱 연결 필요"
   },
-  "kawaikaraLinkCopied": {
-    "message": "Kawaikara 링크를 복사했습니다"
+  "clipboardCopied": {
+    "message": "복사했습니다"
+  },
+  "desktopNotFound": {
+    "message": "Kawaikara를 찾지 못했습니다. 최신 앱을 실행하거나 재시작한 뒤 연결하기를 다시 누르세요."
+  },
+  "multipleDesktops": {
+    "message": "Kawaikara 프로필이 여러 개 실행 중입니다. 다른 앱을 종료하거나 고급의 연결 코드를 사용하세요."
+  },
+  "waitingForApp": {
+    "message": "Kawaikara 실행을 기다리는 중… 브라우저의 앱 열기 요청을 허용하세요."
+  },
+  "checking": {
+    "message": "확인 중"
+  },
+  "connected": {
+    "message": "연결됨"
+  },
+  "appOffline": {
+    "message": "앱 응답 없음 · 연결 확인 대기"
+  },
+  "notConnected": {
+    "message": "연결 안됨"
+  },
+  "preferencesDescription": {
+    "message": "브라우저 연결 및 Provider 설정"
+  },
+  "appConnection": {
+    "message": "Kawaikara 연결"
+  },
+  "connectionStatus": {
+    "message": "연결 상태"
+  },
+  "synchronizedDescription": {
+    "message": "앱이 제공하는 기능과 설정을 동기화합니다."
+  },
+  "cachedDescription": {
+    "message": "저장된 설정을 표시합니다. 아직 연결을 확인하지 못했습니다. 앱이 꺼져 있거나 앱에서 연결을 해제했을 수 있으며, 다시 통신하면 상태가 반영됩니다."
+  },
+  "connectDescription": {
+    "message": "Kawaikara의 고급 설정에서 Extension 사용하기를 누르거나 여기서 연결하세요."
+  },
+  "showApp": {
+    "message": "Kawaikara 열기"
+  },
+  "openApp": {
+    "message": "Kawaikara 실행"
+  },
+  "disconnect": {
+    "message": "연결 해제"
+  },
+  "connectedAppDetails": {
+    "message": "연결된 앱 정보"
+  },
+  "connect": {
+    "message": "Kawaikara 연결하기"
+  },
+  "refresh": {
+    "message": "새로고침"
+  },
+  "advancedConnection": {
+    "message": "고급 연결 옵션"
+  },
+  "connectionCode": {
+    "message": "연결 코드"
+  },
+  "connectWithCode": {
+    "message": "코드로 연결"
+  },
+  "browserFeatures": {
+    "message": "브라우저 기능"
+  },
+  "searchProviders": {
+    "message": "Provider 검색"
+  },
+  "searchPlaceholder": {
+    "message": "이름, 도메인 또는 ID 검색"
+  },
+  "reviewPermissions": {
+    "message": "Provider를 켜기 전에 요청하는 사이트와 기능을 확인하세요. 사이트 접근은 브라우저에서 별도로 승인합니다."
+  },
+  "enable": {
+    "message": "사용"
+  },
+  "siteAccess": {
+    "message": "사이트 접근"
+  },
+  "requestedCapabilities": {
+    "message": "요청 기능"
+  },
+  "pageInjection": {
+    "message": "페이지 UI 추가"
+  },
+  "clipboardWrite": {
+    "message": "클립보드 쓰기"
+  },
+  "enabled": {
+    "message": "사용 중"
+  },
+  "cached": {
+    "message": "캐시됨"
+  },
+  "disabled": {
+    "message": "사용 안함"
+  },
+  "enableToEdit": {
+    "message": "활성화 후 세부 설정을 변경할 수 있습니다."
+  },
+  "noMatchingProviders": {
+    "message": "검색 결과가 없습니다."
+  },
+  "noFeatures": {
+    "message": "앱에서 제공한 브라우저 기능이 없습니다."
+  },
+  "connectToLoad": {
+    "message": "앱을 연결하면 Provider 목록이 표시됩니다."
+  },
+  "supportedBrowsers": {
+    "message": "Chrome 및 Firefox 지원"
+  },
+  "connectedApp": {
+    "message": "연결된 Kawaikara"
+  },
+  "close": {
+    "message": "닫기"
+  },
+  "lastConnection": {
+    "message": "마지막 연결에서 확인한 정보입니다."
+  },
+  "appName": {
+    "message": "앱 이름"
+  },
+  "version": {
+    "message": "버전"
+  },
+  "channel": {
+    "message": "채널"
+  },
+  "runtime": {
+    "message": "실행 형태"
+  },
+  "appLocation": {
+    "message": "앱 위치"
+  },
+  "profileId": {
+    "message": "프로필 ID"
+  },
+  "bridgeAddress": {
+    "message": "연결 주소"
+  },
+  "unavailableDetails": {
+    "message": "정보 없음 · 앱 업데이트 필요"
+  },
+  "identifyInstallation": {
+    "message": "앱 위치와 프로필 ID로 설치된 Kawaikara를 구분할 수 있습니다."
+  },
+  "connectionSection": {
+    "message": "연결"
+  },
+  "providersSection": {
+    "message": "PROVIDER"
+  },
+  "cancel": {
+    "message": "취소"
+  },
+  "actionCancelled": {
+    "message": "취소했습니다. 이미 앱에 전달된 작업은 취소되지 않습니다."
+  },
+  "waitingForLaunch": {
+    "message": "Kawaikara 실행을 기다립니다. 브라우저의 앱 열기 요청을 허용하세요. 열리지 않으면 실행 버튼을 누르거나 처음 연결한 앱을 직접 실행하세요."
+  },
+  "actionDelivered": {
+    "message": "Kawaikara에 전달했습니다. 이 탭은 닫아도 됩니다."
+  },
+  "connectingToApp": {
+    "message": "Kawaikara에 연결하는 중…"
+  },
+  "connectionComplete": {
+    "message": "연결 완료! 확장 설정에서 사용할 Provider를 켜세요. 이 탭은 닫아도 됩니다."
+  },
+  "connectionFailed": {
+    "message": "연결하지 못했습니다. 앱에서 Extension 사용하기를 다시 눌러주세요. "
+  },
+  "useDevelopmentApp": {
+    "message": "개발 연결 사용하기"
+  },
+  "startDevelopmentApp": {
+    "message": "Kawaikara를 pnpm start로 실행하세요. 앱에서 연결할 때는 양쪽의 개발 연결을 켜세요. 연결 코드는 모드와 무관합니다."
+  },
+  "enableAll": {
+    "message": "모든 Provider 활성화"
+  },
+  "disableAll": {
+    "message": "모든 Provider 비활성화"
+  },
+  "pendingChanges": {
+    "message": "저장하지 않은 변경사항"
+  },
+  "applyDescription": {
+    "message": "변경사항을 확인한 뒤 Kawaikara에서 한 번에 적용하세요."
+  },
+  "cancelChanges": {
+    "message": "취소"
+  },
+  "applyChanges": {
+    "message": "적용하기"
+  },
+  "waitingForApproval": {
+    "message": "승인을 기다리는 중…"
+  },
+  "developmentConfirm": {
+    "message": "이 확장에서 개발 연결을 사용하시겠습니까? 개발 앱을 pnpm start로 실행하세요."
+  },
+  "language": {
+    "message": "언어"
+  },
+  "systemLanguage": {
+    "message": "브라우저 기본값"
+  },
+  "disconnectedByApp": {
+    "message": "앱에서 연결을 해제했습니다."
+  },
+  "providerView": {
+    "message": "Provider 보기"
+  },
+  "expandedView": {
+    "message": "확장 패널"
+  },
+  "compactView": {
+    "message": "단축 카드"
+  },
+  "providerDetails": {
+    "message": "Provider 상세"
+  },
+  "disconnectPending": {
+    "message": "이 브라우저에서는 연결이 해제되었습니다. Kawaikara와 확장이 실행되면 앱에도 해제를 전달합니다."
   }
 }

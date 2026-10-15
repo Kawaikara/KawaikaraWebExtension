@@ -1,15 +1,36 @@
 {
   "name": "kawaikara-web-extension",
-  "version": "0.4.0",
+  "version": "0.1.0",
   "private": true,
-  "description": "Open supported streaming sites in the Kawaikara desktop app.",
+  "description": "Apply browser features supplied by connected Kawaikara Providers.",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "test": "node --test",
-    "check": "npm test && npm run build"
+    "build": "npm run typecheck && node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node --test",
+    "check": "npm run typecheck && npm test",
+    "sync:providers": "node scripts/sync-providers.mjs",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"**/*.{ts,tsx,js,cjs,mjs,json,css,html,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,cjs,mjs,json,css,html,md}\"",
+    "build:development": "npm run typecheck && node scripts/build.mjs --development",
+    "package": "npm run build && node scripts/package.mjs"
   },
   "engines": {
     "node": ">=20"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.3.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1",
+    "prettier": "3.9.6",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@kawaikara/kawai-ui": "github:Kawaikara/KawaiUi#0.1.1",
+    "motion": "^12.43.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
 }

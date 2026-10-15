@@ -1,20 +1,254 @@
 {
   "extensionName": {
-    "message": "Kawaikaraで開く"
+    "message": "Kawaikara WebExtension"
   },
   "extensionDescription": {
-    "message": "対応するストリーミングサイトのページ、動画、リンクをKawaikaraで開きます。"
+    "message": "接続したKawaikara ProviderのメニューとDOM機能を適用します。"
   },
-  "openInKawaikara": {
-    "message": "Kawaikaraで開く"
+  "extensionReady": {
+    "message": "Kawaikara 読み込み完了・サイト機能有効"
   },
-  "openLinkInKawaikara": {
-    "message": "リンクをKawaikaraで開く"
+  "extensionSetup": {
+    "message": "Kawaikara 接続済み・Provider WebExtensionを有効にしてください"
   },
-  "copyKawaikaraLink": {
-    "message": "Kawaikaraリンクをコピー"
+  "extensionDisconnected": {
+    "message": "Kawaikara 読み込み完了・アプリに接続してください"
   },
-  "kawaikaraLinkCopied": {
-    "message": "Kawaikaraリンクをコピーしました"
+  "clipboardCopied": {
+    "message": "コピーしました"
+  },
+  "desktopNotFound": {
+    "message": "Kawaikaraが見つかりません。更新したアプリを起動・再起動して接続してください。"
+  },
+  "multipleDesktops": {
+    "message": "複数のKawaikaraが起動中です。他を終了するか詳細の接続コードを使ってください。"
+  },
+  "waitingForApp": {
+    "message": "Kawaikaraの起動を待っています。ブラウザーのアプリ起動要求を許可してください。"
+  },
+  "checking": {
+    "message": "確認中"
+  },
+  "connected": {
+    "message": "接続済み"
+  },
+  "appOffline": {
+    "message": "アプリの応答なし · 接続確認待ち"
+  },
+  "notConnected": {
+    "message": "未接続"
+  },
+  "preferencesDescription": {
+    "message": "ブラウザー接続とProvider設定"
+  },
+  "appConnection": {
+    "message": "Kawaikaraへの接続"
+  },
+  "connectionStatus": {
+    "message": "接続状態"
+  },
+  "synchronizedDescription": {
+    "message": "アプリの機能と設定を同期します。"
+  },
+  "cachedDescription": {
+    "message": "保存された設定を表示しています。接続は未確認です。アプリが終了しているか、接続が解除された可能性があります。通信が再開すると状態が更新されます。"
+  },
+  "connectDescription": {
+    "message": "Kawaikaraの詳細設定で「拡張機能を使う」を押すか、ここから接続してください。"
+  },
+  "showApp": {
+    "message": "Kawaikaraを表示"
+  },
+  "openApp": {
+    "message": "Kawaikaraを起動"
+  },
+  "disconnect": {
+    "message": "接続解除"
+  },
+  "connectedAppDetails": {
+    "message": "接続中のアプリ情報"
+  },
+  "connect": {
+    "message": "Kawaikaraに接続"
+  },
+  "refresh": {
+    "message": "更新"
+  },
+  "advancedConnection": {
+    "message": "詳細接続オプション"
+  },
+  "connectionCode": {
+    "message": "接続コード"
+  },
+  "connectWithCode": {
+    "message": "コードで接続"
+  },
+  "browserFeatures": {
+    "message": "ブラウザー機能"
+  },
+  "searchProviders": {
+    "message": "Providerを検索"
+  },
+  "searchPlaceholder": {
+    "message": "名前・ドメイン・IDで検索"
+  },
+  "reviewPermissions": {
+    "message": "有効にする前にサイトと機能を確認してください。サイトアクセスはブラウザーで別途許可します。"
+  },
+  "enable": {
+    "message": "有効にする"
+  },
+  "siteAccess": {
+    "message": "サイトアクセス"
+  },
+  "requestedCapabilities": {
+    "message": "要求する機能"
+  },
+  "pageInjection": {
+    "message": "ページUIの追加"
+  },
+  "clipboardWrite": {
+    "message": "クリップボードへの書き込み"
+  },
+  "enabled": {
+    "message": "有効"
+  },
+  "cached": {
+    "message": "キャッシュ済み"
+  },
+  "disabled": {
+    "message": "無効"
+  },
+  "enableToEdit": {
+    "message": "有効にすると設定を変更できます。"
+  },
+  "noMatchingProviders": {
+    "message": "一致するProviderはありません。"
+  },
+  "noFeatures": {
+    "message": "このアプリが提供するブラウザー機能はありません。"
+  },
+  "connectToLoad": {
+    "message": "Kawaikaraに接続するとProviderを読み込みます。"
+  },
+  "supportedBrowsers": {
+    "message": "ChromeとFirefoxに対応"
+  },
+  "connectedApp": {
+    "message": "接続中のKawaikara"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "lastConnection": {
+    "message": "最後の接続時に確認した情報です。"
+  },
+  "appName": {
+    "message": "アプリ名"
+  },
+  "version": {
+    "message": "バージョン"
+  },
+  "channel": {
+    "message": "チャンネル"
+  },
+  "runtime": {
+    "message": "実行形式"
+  },
+  "appLocation": {
+    "message": "アプリの場所"
+  },
+  "profileId": {
+    "message": "プロファイルID"
+  },
+  "bridgeAddress": {
+    "message": "接続先"
+  },
+  "unavailableDetails": {
+    "message": "情報なし・アプリを更新してください"
+  },
+  "identifyInstallation": {
+    "message": "アプリの場所とプロファイルIDでインストールを区別できます。"
+  },
+  "connectionSection": {
+    "message": "接続"
+  },
+  "providersSection": {
+    "message": "PROVIDER"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "actionCancelled": {
+    "message": "キャンセルしました。アプリに送信済みの操作は取り消せません。"
+  },
+  "waitingForLaunch": {
+    "message": "Kawaikaraの起動を待っています。ブラウザーの確認を許可してください。開かない場合は起動ボタンを押すか、接続済みのアプリを手動で起動してください。"
+  },
+  "actionDelivered": {
+    "message": "Kawaikaraに送信しました。このタブは閉じてもかまいません。"
+  },
+  "connectingToApp": {
+    "message": "Kawaikaraに接続中…"
+  },
+  "connectionComplete": {
+    "message": "接続しました。拡張機能の設定でProviderを有効にしてください。このタブは閉じてもかまいません。"
+  },
+  "connectionFailed": {
+    "message": "接続できませんでした。Kawaikaraで「拡張機能を使う」をもう一度押してください。 "
+  },
+  "useDevelopmentApp": {
+    "message": "開発接続を使用"
+  },
+  "startDevelopmentApp": {
+    "message": "pnpm start で Kawaikara を起動してください。アプリから接続する場合は両方で開発接続を有効にします。接続コードはモードを問いません。"
+  },
+  "enableAll": {
+    "message": "すべての Provider を有効にする"
+  },
+  "disableAll": {
+    "message": "すべての Provider を無効にする"
+  },
+  "pendingChanges": {
+    "message": "未保存の変更"
+  },
+  "applyDescription": {
+    "message": "変更を確認し、Kawaikara でまとめて適用してください。"
+  },
+  "cancelChanges": {
+    "message": "キャンセル"
+  },
+  "applyChanges": {
+    "message": "適用"
+  },
+  "waitingForApproval": {
+    "message": "承認を待っています…"
+  },
+  "developmentConfirm": {
+    "message": "この拡張機能で開発接続を使用しますか？ pnpm start で開発アプリを起動してください。"
+  },
+  "language": {
+    "message": "言語"
+  },
+  "systemLanguage": {
+    "message": "ブラウザーの既定"
+  },
+  "disconnectedByApp": {
+    "message": "Kawaikara が接続を解除しました。"
+  },
+  "providerView": {
+    "message": "Providerの表示"
+  },
+  "expandedView": {
+    "message": "展開パネル"
+  },
+  "compactView": {
+    "message": "コンパクトカード"
+  },
+  "providerDetails": {
+    "message": "Providerの詳細"
+  },
+  "disconnectPending": {
+    "message": "このブラウザーでは接続を解除しました。Kawaikaraと拡張機能が動作しているときにアプリにも通知します。"
   }
 }

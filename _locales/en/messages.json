@@ -1,20 +1,254 @@
 {
   "extensionName": {
-    "message": "Open in Kawaikara"
+    "message": "Kawaikara WebExtension"
   },
   "extensionDescription": {
-    "message": "Open pages, videos, and links from supported streaming sites in Kawaikara."
+    "message": "Apply browser menus and DOM features supplied by connected Kawaikara Providers."
   },
-  "openInKawaikara": {
-    "message": "Open in Kawaikara"
+  "extensionReady": {
+    "message": "Kawaikara loaded — site features enabled"
   },
-  "openLinkInKawaikara": {
-    "message": "Open link in Kawaikara"
+  "extensionSetup": {
+    "message": "Kawaikara connected — enable a Provider WebExtension"
   },
-  "copyKawaikaraLink": {
-    "message": "Copy Kawaikara link"
+  "extensionDisconnected": {
+    "message": "Kawaikara loaded — connect the app"
   },
-  "kawaikaraLinkCopied": {
-    "message": "Kawaikara link copied"
+  "clipboardCopied": {
+    "message": "Text copied"
+  },
+  "desktopNotFound": {
+    "message": "Kawaikara was not found. Start or restart the updated app, then click Connect again."
+  },
+  "multipleDesktops": {
+    "message": "Multiple Kawaikara profiles are running. Close the others or use a connection code under Advanced."
+  },
+  "waitingForApp": {
+    "message": "Waiting for Kawaikara… Allow the browser’s app-opening prompt."
+  },
+  "checking": {
+    "message": "Checking"
+  },
+  "connected": {
+    "message": "Connected"
+  },
+  "appOffline": {
+    "message": "App not responding · Awaiting connection verification"
+  },
+  "notConnected": {
+    "message": "Not connected"
+  },
+  "preferencesDescription": {
+    "message": "Browser connection & Provider preferences"
+  },
+  "appConnection": {
+    "message": "Kawaikara connection"
+  },
+  "connectionStatus": {
+    "message": "Connection status"
+  },
+  "synchronizedDescription": {
+    "message": "Features and settings are synchronized with your app."
+  },
+  "cachedDescription": {
+    "message": "Showing saved settings. The connection has not been verified; the app may be offline or may have disconnected this extension. Its status will update when communication resumes."
+  },
+  "connectDescription": {
+    "message": "Use “Use extension” in Kawaikara’s Advanced settings, or connect here."
+  },
+  "showApp": {
+    "message": "Show Kawaikara"
+  },
+  "openApp": {
+    "message": "Open Kawaikara"
+  },
+  "disconnect": {
+    "message": "Disconnect"
+  },
+  "connectedAppDetails": {
+    "message": "Connected app details"
+  },
+  "connect": {
+    "message": "Connect to Kawaikara"
+  },
+  "refresh": {
+    "message": "Refresh"
+  },
+  "advancedConnection": {
+    "message": "Advanced connection options"
+  },
+  "connectionCode": {
+    "message": "Connection code"
+  },
+  "connectWithCode": {
+    "message": "Connect with code"
+  },
+  "browserFeatures": {
+    "message": "Browser features"
+  },
+  "searchProviders": {
+    "message": "Search Providers"
+  },
+  "searchPlaceholder": {
+    "message": "Search name, domain or ID"
+  },
+  "reviewPermissions": {
+    "message": "Review the sites and capabilities before enabling a Provider. Site access is approved separately in your browser."
+  },
+  "enable": {
+    "message": "Enable"
+  },
+  "siteAccess": {
+    "message": "Site access"
+  },
+  "requestedCapabilities": {
+    "message": "Requested capabilities"
+  },
+  "pageInjection": {
+    "message": "Page UI injection"
+  },
+  "clipboardWrite": {
+    "message": "Clipboard write"
+  },
+  "enabled": {
+    "message": "Enabled"
+  },
+  "cached": {
+    "message": "Cached"
+  },
+  "disabled": {
+    "message": "Disabled"
+  },
+  "enableToEdit": {
+    "message": "Enable to edit settings."
+  },
+  "noMatchingProviders": {
+    "message": "No matching Providers."
+  },
+  "noFeatures": {
+    "message": "No browser features supplied by this app."
+  },
+  "connectToLoad": {
+    "message": "Connect Kawaikara to load its Providers."
+  },
+  "supportedBrowsers": {
+    "message": "Chrome and Firefox supported"
+  },
+  "connectedApp": {
+    "message": "Connected Kawaikara"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "lastConnection": {
+    "message": "Information from the last connection."
+  },
+  "appName": {
+    "message": "App name"
+  },
+  "version": {
+    "message": "Version"
+  },
+  "channel": {
+    "message": "Channel"
+  },
+  "runtime": {
+    "message": "Runtime"
+  },
+  "appLocation": {
+    "message": "App location"
+  },
+  "profileId": {
+    "message": "Profile ID"
+  },
+  "bridgeAddress": {
+    "message": "Bridge address"
+  },
+  "unavailableDetails": {
+    "message": "Unavailable · update the app"
+  },
+  "identifyInstallation": {
+    "message": "Use the app location and profile ID to distinguish installations."
+  },
+  "connectionSection": {
+    "message": "CONNECTION"
+  },
+  "providersSection": {
+    "message": "PROVIDERS"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "actionCancelled": {
+    "message": "Cancelled. An action already sent to the app cannot be recalled."
+  },
+  "waitingForLaunch": {
+    "message": "Waiting for Kawaikara. Allow the browser’s app-opening prompt. If nothing opens, click Open Kawaikara or start the paired app manually."
+  },
+  "actionDelivered": {
+    "message": "Sent to Kawaikara. You can close this tab."
+  },
+  "connectingToApp": {
+    "message": "Connecting to Kawaikara…"
+  },
+  "connectionComplete": {
+    "message": "Connected! Enable Providers in extension settings. You can close this tab."
+  },
+  "connectionFailed": {
+    "message": "Could not connect. Click Use extension in Kawaikara again. "
+  },
+  "useDevelopmentApp": {
+    "message": "Use development connection"
+  },
+  "startDevelopmentApp": {
+    "message": "Start Kawaikara with pnpm start. For app-initiated pairing, enable development connection on both sides. Connection codes work with either mode."
+  },
+  "enableAll": {
+    "message": "Enable all Providers"
+  },
+  "disableAll": {
+    "message": "Disable all Providers"
+  },
+  "pendingChanges": {
+    "message": "Unsaved changes"
+  },
+  "applyDescription": {
+    "message": "Review your changes, then apply them together in Kawaikara."
+  },
+  "cancelChanges": {
+    "message": "Cancel"
+  },
+  "applyChanges": {
+    "message": "Apply"
+  },
+  "waitingForApproval": {
+    "message": "Waiting for approval…"
+  },
+  "developmentConfirm": {
+    "message": "Allow this extension to use development connections? Start the development app with pnpm start."
+  },
+  "language": {
+    "message": "Language"
+  },
+  "systemLanguage": {
+    "message": "Browser default"
+  },
+  "disconnectedByApp": {
+    "message": "Kawaikara disconnected this extension."
+  },
+  "providerView": {
+    "message": "Provider layout"
+  },
+  "expandedView": {
+    "message": "Expanded panels"
+  },
+  "compactView": {
+    "message": "Compact cards"
+  },
+  "providerDetails": {
+    "message": "Provider details"
+  },
+  "disconnectPending": {
+    "message": "Disconnected in this browser. Kawaikara will be notified when it is available and this extension is running."
   }
 }

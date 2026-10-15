@@ -1,41 +1,41 @@
-# Kawaikara Web Extension
+# Kawaikara WebExtension
 
-Chrome과 Firefox에서 지원 사이트의 현재 페이지나 링크를 Kawaikara 데스크톱 앱으로 전달하는 WebExtension입니다.
+[한국어](Docs/README/ko.md) · [日本語](Docs/README/ja.md)
 
-## 기능
+Use browser features provided by your Kawaikara Providers, including context menus
+and page actions such as opening or downloading a video in Kawaikara.
+The extension connects your browser to Kawaikara and adapts the features declared
+by enabled Providers. Available features depend on your installed Providers.
 
-- 지원 사이트에서 확장 아이콘을 누르면 현재 페이지를 Kawaikara에서 열기
-- 지원 사이트의 페이지 또는 `<video>` 요소를 우클릭해 **Kawaikara에서 열기**
-- 페이지 또는 영상의 **Kawaikara 링크 복사**
-- YouTube와 CHZZK 영상의 자체 우클릭 메뉴에도 열기와 링크 복사 항목 표시
-- 지원 사이트로 향하는 링크를 우클릭해 **링크를 Kawaikara에서 열기**
-- 한국어, 영어, 일본어 메뉴
-- 열기는 `kawaikara://open?url=...`, 공유용 복사는 `https://kawaikara.github.io/open/?url=...` 사용
+## Installation
 
-지원 사이트 목록은 `src/supported-sites.js`에서 관리합니다.
+Supported browsers: **Google Chrome 121+** and **Mozilla Firefox 140+**.
+A compatible Kawaikara app is required.
 
-## 빌드와 검사
+For a local build, follow the [build guide](Docs/Build.md), then load it:
 
-Node.js 20 이상에서 다음을 실행
+- **Chrome:** open `chrome://extensions`, enable Developer mode, choose **Load unpacked**,
+  and select `dist/chrome`.
+- **Firefox:** open `about:debugging#/runtime/this-firefox`, choose **Load Temporary Add-on**,
+  and select `dist/firefox/manifest.json`. This temporary installation lasts until Firefox closes.
 
-```sh
-npm run check
-```
+## Quick start
 
-결과물은 다음 디렉터리에 생성됨
+1. Run Kawaikara. In **Preferences → Advanced**, choose **Use extension**.
+2. The connection page opens in your default browser. On success, that same tab becomes
+   the extension settings page. Use a browser where the extension is installed and enabled.
+3. Find the Provider you want, draft its WebExtension features, then choose **Apply** and approve the requested permissions.
+4. Visit a supported site and use the Provider's menus or page actions.
 
-- Chrome: `dist/chrome`
-- Firefox: `dist/firefox`
+You can also connect from extension settings and approve the request in Kawaikara.
+Provider features can be enabled or disabled individually. Disconnecting removes the
+connection and cached features.
 
-## 개발용 설치
+Approved features remain visible while Kawaikara is offline. Using one requests that
+Kawaikara open and reconnect before executing it. Automatic launch requires a registered
+app launcher; development builds may require starting Kawaikara manually.
 
-Chrome에서는 `chrome://extensions`에서 **개발자 모드**를 켜고 **압축해제된 확장 프로그램을 로드합니다**를 눌러 `dist/chrome`을 선택합니다.
+## Documentation
 
-Firefox에서는 `about:debugging#/runtime/this-firefox`에서 **임시 부가 기능 로드**를 누르고 `dist/firefox/manifest.json`을 선택합니다.
-
-데스크톱 앱도 이 저장소의 최신 버전이어야 합니다. 처음 열 때 브라우저 또는 운영체제가 `kawaikara://` 외부 앱 실행 여부를 물을 수 있습니다.
-
-
-## TODO
-개발자용과 유저용 채널 분리
-
+See [Docs](Docs/Index.md) for building, testing, connection troubleshooting,
+implementation, localization, and release versioning.
