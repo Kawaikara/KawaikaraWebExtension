@@ -11,6 +11,8 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier --write \"**/*.{ts,tsx,js,cjs,mjs,json,css,html,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,cjs,mjs,json,css,html,md}\"",
+    "build:dev": "npm run build:development",
+    "build:all": "npm run typecheck && node scripts/build.mjs && node scripts/build.mjs --development",
     "build:development": "npm run typecheck && node scripts/build.mjs --development",
     "package": "npm run build && node scripts/package.mjs"
   },

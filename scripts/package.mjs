@@ -10,7 +10,7 @@ const archives = [];
 for (const target of ['chrome', 'firefox']) {
   const directory = path.join(root, 'dist', target);
   const manifest = JSON.parse(await readFile(path.join(directory, 'manifest.json'), 'utf8'));
-  if (manifest.version !== version || manifest.name.includes('Development'))
+  if (manifest.version !== version || manifest.name !== '__MSG_extensionName__')
     throw new Error('Build production artifacts before packaging.');
   const archive = path.join(destination, `kawaikara-web-extension-${version}-${target}.zip`);
   await rm(archive, { force: true });

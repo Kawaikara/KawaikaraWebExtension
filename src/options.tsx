@@ -351,7 +351,7 @@ function App() {
       <header className="page-header">
         <img src="icons/icon-48.png" width="48" height="48" alt="" />
         <div>
-          <h1>Kawaikara WebExtension {development && <Badge>D · Development</Badge>}</h1>
+          <h1>Kawaikara WebExtension {development && <Badge>Dev</Badge>}</h1>
           <p>{t('preferencesDescription')}</p>
         </div>
         <label className="language-picker">
@@ -659,7 +659,9 @@ function App() {
           </Button>
         </div>
       </dialog>
-      <footer> Kawaikara WebExtension · {api.runtime.getManifest().version}</footer>
+      <footer>
+        Kawaikara WebExtension{development ? ' Dev' : ''} · {api.runtime.getManifest().version}
+      </footer>
       <dialog
         ref={dialog}
         onClose={() => infoButton.current?.focus()}

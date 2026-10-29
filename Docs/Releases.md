@@ -64,7 +64,7 @@ remain separate from creating these files; no store acceptance has been asserted
 A development connection checkbox changes discovery mode, not the installed extension name.
 For a visibly marked development installation, load `dist/development/chrome` or
 `dist/development/firefox` after `npm run build:development`. Those builds display
-**Kawaikara WebExtension Development** and a **D** toolbar badge. Upload only production ZIPs.
+**Kawaikara WebExtension Dev** and a **D** toolbar badge. Upload only production ZIPs.
 
 ## Local validation notes (0.1.0)
 

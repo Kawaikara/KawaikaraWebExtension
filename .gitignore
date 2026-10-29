@@ -2,3 +2,6 @@ dist/
 *.zip
 
 node_modules/
+
+# macOS Finder metadata
+.DS_Store

@@ -1,4 +1,7 @@
 {
+  "extensionDevName": {
+    "message": "Kawaikara WebExtension Dev"
+  },
   "extensionName": {
     "message": "Kawaikara WebExtension"
   },

@@ -35,7 +35,7 @@ Review the generated diff before committing it.
 npm run build
 ```
 
-The build type-checks source and recreates `dist/`:
+The production build type-checks source and recreates its browser output directories:
 
 | Browser      | Output         | Background runtime         |
 | ------------ | -------------- | -------------------------- |
@@ -55,12 +55,18 @@ this local development cycle.
 ## Development extension
 
 ```sh
-npm run build:development
+npm run build:dev
 ```
 
 Load `dist/development/chrome` or `dist/development/firefox/manifest.json` for the
-Development extension. Its name includes Development, its toolbar badge displays `D`,
+`Kawaikara WebExtension Dev` extension. Its toolbar badge displays `D`,
 and its settings header identifies the channel. Production outputs remain at
 `dist/chrome` and `dist/firefox`. The two build commands preserve each other's output.
 Firefox uses separate extension IDs; Chrome unpacked builds use their separate directories.
-Both channels keep the planned release version 0.1.0.
+Both channels keep the planned release version 0.1.0. Names are also distinguished in
+the toolbar tooltip, settings header/footer, and settings tab title. The production
+name remains `Kawaikara WebExtension`.
+
+Build both channels together with `npm run build:all`. `build:development` remains
+available as an alias for the development build. `npm run package` builds and packages
+only the production extension.

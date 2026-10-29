@@ -8,10 +8,12 @@ const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '
 const development = process.argv.includes('--development');
 const outputRoot = path.join(projectRoot, development ? 'dist/development' : 'dist');
 const targets = ['chrome', 'firefox'];
+const extensionName = development ? 'Kawaikara WebExtension Dev' : 'Kawaikara WebExtension';
+const localizedName = development ? '__MSG_extensionDevName__' : '__MSG_extensionName__';
 
 const commonManifest = {
   manifest_version: 3,
-  name: development ? 'Kawaikara WebExtension Development' : '__MSG_extensionName__',
+  name: localizedName,
   description: '__MSG_extensionDescription__',
   version: JSON.parse(await readFile(path.join(projectRoot, 'package.json'), 'utf8')).version,
   default_locale: 'en',
@@ -34,7 +36,7 @@ const commonManifest = {
     128: 'icons/icon-128.png',
   },
   action: {
-    default_title: '__MSG_extensionName__',
+    default_title: localizedName,
     default_icon: {
       16: 'icons/icon-16.png',
       32: 'icons/icon-32.png',
@@ -75,7 +77,13 @@ for (const target of targets) {
       }),
     ),
     cp(path.join(projectRoot, 'src/launch.html'), path.join(outputDirectory, 'launch.html')),
-    cp(path.join(projectRoot, 'src/options.html'), path.join(outputDirectory, 'options.html')),
+    writeFile(
+      path.join(outputDirectory, 'options.html'),
+      (await readFile(path.join(projectRoot, 'src/options.html'), 'utf8')).replace(
+        '<title>Kawaikara WebExtension</title>',
+        `<title>${extensionName}</title>`,
+      ),
+    ),
     cp(path.join(projectRoot, '_locales'), path.join(outputDirectory, '_locales'), {
       recursive: true,
     }),
@@ -111,4 +119,4 @@ for (const target of targets) {
   );
 }
 
-console.log('Built Chrome and Firefox Provider-driven extensions.');
+console.log(`Built ${extensionName} for Chrome and Firefox in ${outputRoot}.`);
